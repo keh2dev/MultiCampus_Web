@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: pink;
+        }
+
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        #top {
+            width: 800px;
+            height: 100px;
+            background-color: lime;
+            padding: 2px;
+        }
+
+        #top2 {
+            border: 20px dotted red;
+            box-shadow: 10px 10px yellow;
+            background-color: black;
+            color: yellow;
+            border-radius: 100px 10px;
+            /*두번쓰면 반복되어 자동 적용됨*/
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            /* 휠 움직여도 고정되어 따라옴*/
+            top: 5px;
+            right: 5px;
+        }
+
+        #total {
+            width: 800px;
+            height: 800px;
+            background-color: lightcyan;
+            /* text-align: center; */
+        }
+
+        #center {
+            padding: 30px;
+            /* align-content: center;
+            vertical-align: middle; */
+            width: 800px;
+            height: 500px;
+
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            /*위의 세줄은 가로 세로로 가운데에 위치하게 하기 위한 방법*/
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+        }
+
+        li:first-child {
+            border-radius: 50px 0 0 50px;
+        }
+
+        li:last-child {
+            border-radius: 0 50px 50px 0;
+        }
+
+        li:nth-child(2n) {
+            background-color: orange;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="total">
+        <div id="top">
+            <!-- 순서없는 목록 ul-->
+            <ul>
+                <li>
+                    <!-- 자동완성 안뜨면 커맨드+스페이스바 -->
+                    <a href="page20.html">회원가입</a>
+                </li>
+                <li>
+                    <!-- 자동완성 안뜨면 커맨드+스페이스바 -->
+                    <a href="page10.html">제품정보</a>
+                </li>
+                <li>
+                    <!-- 자동완성 안뜨면 커맨드+스페이스바 -->
+                    <a href="page30.html">게시판</a>
+                </li>
+                <li>
+                    <!-- 자동완성 안뜨면 커맨드+스페이스바 -->
+                    <a href="page40.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            고정된 화면 보이는 부분 <br>
+            (장바구니 등)
+        </div>
+        <div id="center">
+            <h3>검색 단어 입력</h3>
+            <form action="보내는서버주소">
+                검색어 <input type="text">
+                <button>검색어 전송</button>
+            </form>
+            <hr color="red">
+            <br>
+            <h3>로그인 화면</h3>
+            <form action="보내는서버주소">
+                <table border="1px">
+                    <tr>
+                        <td>
+                            아이디
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            패스워드
+                        </td>
+                        <td>
+                            <input type="password">
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2">
+                            <button>로그인 처리 요청</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <br>
+            <hr color="red">
+            <br>
+            <h3>회원가입 화면</h3>
+            <form action="보내는서버주소">
+                <table border="1px">
+                    <tr>
+                        <td>아이디</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>패스워드</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>이름</td>
+                        <td><input type="text" placeholder="성과 이름을 순서대로 붙여쓰세요" style="width: 200px;"></td>
+                    </tr>
+                    <tr>
+                        <td>성별</td>
+                        <td>남<input type="radio" name="gender"> 여<input type="radio" name="gender"></td>
+                    </tr>
+                    <tr>
+                        <td>취미</td>
+                        <td>
+                            등산<input type="checkbox" name="hobby">
+                            축구<input type="checkbox" name="hobby">
+                            헬스<input type="checkbox" name="hobby">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>전화번호 통신사</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">SKT</option>
+                                <option value="">LGT</option>
+                                <option value="">KT</option>
+                                <option value="">알뜰폰</option>
+                            </select>
+                            <input type="number" placeholder="-없이 숫자만 이어서" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>생년월일</td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>가입한 날짜</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td>가입한 주</td>
+                        <td><input type="week"></td>
+                    </tr>
+                    <tr>
+                        <td>하고 싶은 말</td>
+                        <td><input type="textarea" placeholder="100자 이하로 작성해주세요"></td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2">
+                            <button>회원가입 처리 요청</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

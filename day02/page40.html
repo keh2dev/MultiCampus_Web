@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <style>
+        body {
+            background: pink;
+        }
+
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        #top {
+            width: 800px;
+            height: 100px;
+            background-color: lime;
+            padding: 2px;
+        }
+
+        #top2 {
+            border: 20px dotted red;
+            box-shadow: 10px 10px yellow;
+            background-color: black;
+            color: yellow;
+            border-radius: 100px 10px;
+            /*두번쓰면 반복되어 자동 적용됨*/
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            /* 휠 움직여도 고정되어 따라옴*/
+            top: 5px;
+            right: 5px;
+        }
+
+        #total {
+            width: 800px;
+            height: 800px;
+            background-color: lightcyan;
+            text-align: center;
+        }
+
+        #center {
+            padding: 30px;
+            align-content: center;
+            vertical-align: middle;
+            width: 800px;
+            height: 500px;
+
+            display: flex; /*디스플레이 변형*/
+            align-items: center; /*가로*/
+            justify-content: center; /*세로*/
+            /*위의 세줄은 가로 세로 가운데에 위치하게 하기 위한 방법*/
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+        }
+
+        li:first-child {
+            border-radius: 50px 0 0 50px;
+        }
+
+        li:last-child {
+            border-radius: 0 50px 50px 0;
+        }
+
+        li:nth-child(2n) {
+            background-color: orange;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="total">
+        <div id="top">
+            <!-- 순서없는 목록 ul-->
+            <ul>
+                <li>
+                    <!-- 자동완성 안뜨면 커맨드+스페이스바 -->
+                    <a href="page20.html">회원가입</a>
+                </li>
+                <li>
+                    <!-- 자동완성 안뜨면 커맨드+스페이스바 -->
+                    <a href="page10.html">제품정보</a>
+                </li>
+                <li>
+                    <!-- 자동완성 안뜨면 커맨드+스페이스바 -->
+                    <a href="page30.html">게시판</a>
+                </li>
+                <li>
+                    <!-- 자동완성 안뜨면 커맨드+스페이스바 -->
+                    <a href="page40.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            고정된 화면 보이는 부분 <br>
+            (장바구니 등)
+        </div>
+        <div id="center"> <!--장바구니 내용-->
+            <table border="1" bordercolor="red">
+                <tr align="center">
+                    <td width="100">제품번호</td>
+                    <td width="400">100</td>
+                </tr>
+                <tr align="center">
+                    <td>제품이름</td>
+                    <td>라이언 케이스</td>
+                </tr>
+                <tr align="center">
+                    <td>제품설명</td>
+                    <td>카카오 스마트폰 악세사리</td>
+                </tr>
+                <tr align="center">
+                    <td>가격</td>
+                    <td>10000원</td>
+                </tr>
+                <tr align="center">
+                    <td>제조회사</td>
+                    <td>주식회사 카카오</td>
+                </tr>
+                <tr align="center">
+                    <td>제품 이미지</td>
+                    <td><img src="image1.jpg" alt=""></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

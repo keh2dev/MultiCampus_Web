@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 메일 페이지</title>
+    <link rel="stylesheet" href="out.css">
+    <style>
+        a { /* 기본선택자 중 태그명 선택 */
+            color: white;
+            background: lime;
+            width: 300px; 
+            height: 200px;
+            /* a태그는 인라인태그라서 기본적으로 width, height가 적용이 안됨. 
+            인라인태그에도 해당 사항 적용하려면 아래와 같이 디스플레이 인라인블럭 적용해야됨*/
+            display : inline-block
+        }
+    </style>
+</head>
+<!-- ** a태그의 글자를 white로! width를 300px, height를 200px
+백그라운드 색을 lime으로 변경
+** hr첫번째 것만 width를 300px로! -->
+
+<body>
+    <a href="mail.html">mail페이지로</a>
+    <a href="cafe.html">cafe페이지로</a>
+    <a href="news.html">news페이지로</a>
+    <hr color="pink" style="width: 300px;">
+    네이버 메일 페이지입니다.
+    <hr color="blue">
+</body>
+
+</html>

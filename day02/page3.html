@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img[src $=jpg] {
+            border: 10px solid red;
+        }
+
+        img[src $=png] {
+            border: 20px dotted blue;
+        }
+
+        #d1>p {
+            background-color: gold;
+        }
+
+        #d2 p {
+            background-color: silver;
+        }
+
+        #d1 {
+            background-color: yellow;
+        }
+
+        #d2 {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="image1.jpg" alt="카카오 스마트폰 악세서리"><br>
+    <img src="001.png" alt="이야기하는 아이들"><br>
+    <img src="002.png" alt="w3">
+    <!-- hr은 가로줄~ -->
+    <hr>
+    <div id="d1">
+        <!-- p태그는 문단, 한줄이 떨어짐.-->
+        <p>내가 좋아하는 음식~</p>
+        <div id="d11">
+            <p>난 한식</p>
+            <p>난 양식</p>
+        </div>
+
+        <div id="d2">
+            <!-- p태그는 문단, 한줄이 떨어짐.-->
+            <p>내가 싫어하는 음식..</p>
+            <div id="d22">
+                <p>난 중식</p>
+                <p>난 일식</p>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1. 가로, 세로를 실수로 입력받으세요!
+        //   사각형을 면적을 구해서 출력(가로 * 세로)
+        //2. 커피한잔 가격, 커피구매 갯수를 입력받으세요!
+        //   전체 결제금액을 구해서 출력
+        //3. 사과의 가격이 2000, 배의 가격이 3000
+        //   사과 구매 개수 3, 배 구매 개수 2
+        //   전체 결제 금액은?
+        //4. 어제 온도 25도, 오늘 온도 10도
+        //   어제와 오늘 온도의 평균은?
+
+        width = prompt('가로 길이 실수로 입력')
+        height = prompt('세로 길이 실수로 입력')
+        area = parseFloat(width) * parseFloat(height)
+        alert('사각형의 면적은 ' + area.toFixed(1) + '입니다. (소수점 한자리까지 표기)') // toFixed($) 소수점 $자리까지 표기
+
+        coffee = prompt('커피한잔 가격?')
+        count = prompt('구매 갯수')
+        coffeepay = parseInt(coffee) * parseInt(count)
+        alert('커피 전체 결제금액은 ' + coffeepay + '입니다.')
+
+        const apple = 2000 // const는 변경 불가능한 상수 값을 입력하고 싶을 때 사용
+        const pear = 3000
+        applecount = 3
+        pearcount = 2
+        fruitspay = parseInt(apple) * parseInt(applecount) + parseInt(pear) * parseInt(pearcount)
+        alert('과일 전체 결제금액은 ' + fruitspay + '입니다.')
+
+        yesterdaytemparature = 25
+        todaytemparature = 10
+        averagetemparature = (parseFloat(yesterdaytemparature) + parseFloat(todaytemparature)) / 2
+        alert('어제 오늘 평균 온도는 ' + averagetemparature + '입니다.')
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

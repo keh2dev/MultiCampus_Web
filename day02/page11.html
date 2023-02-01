@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*기본선택자 세가지 -- 태그, id, class */
+        body {
+            /* 기본선택자(태그선택) -- 태그명 */
+            background-color: yellow;
+            /* 배경색 지정 */
+            color: blue;
+            /* 글자색 지정 */
+        }
+
+        a {
+            text-decoration: none;
+            /*텍스트 데코 : 논 = 하이퍼링크 밑줄 삭제*/
+            color: purple;
+            background-color: burlywood;
+            font-size: 100px;
+            font-family: 궁서체;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        #you {
+            /*기본선택자(id선택, 하나만 선택!)--#id명 */
+            color: lime;
+        }
+
+        .we {
+            /*기본선택자(class 선택, 여러개 선택!)-- .class명 */
+            border-radius: 50px;
+            font-size: 50px;
+        }
+
+        .we {
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:red; background-color: black; font-size: 50px;">페이지 11입니다.</h1>
+    <h1> 페이지 22입니다.</h1>
+    <h1 id="you">페이지 33입니다.</h1>
+    <a class="we" href="page2.html">2페이지로</a>
+</body>
+
+</html>
