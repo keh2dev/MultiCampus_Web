@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="out.js"></script> <!-- 아래 3번 문제를 위한 js 연결 -->
+    <script>
+        // 1. 화면에 다음과 같이 반복해서 출력하세요.
+        // @@@
+        // @@@
+        // @@@
+        for(let i = 0; i < 3; i++){ // 이하 반복문에 대해 행넘기기로 세번 반복
+            for(let j = 0; j < 3; j++){ // 한줄에 대한 @ 세번 반복
+                document.write("@")
+            }
+            document.write("<br>")            
+        }
+
+        // 2. prompt('당신이 주로 가는 포털사이트는')인 경우, naver이면
+        // www.naver.com으로 자동이동, daum이면 www.daum.net으로 자동 이동, 다른 사이트이면 www.google.com 으로 자동 이동
+        let site = prompt("당신이 주로 가는 포털 사이트는?")
+        if (site == "naver") {
+            location.href = "https://www.naver.com"
+        } else if (site == "daum") {
+            location.href = "https://www.daum.net"
+        } else {
+            location.href = "https://www.google.com"
+        }
+
+        // 3. out.js에 여행하다()함수, 쉬다()함수를 정의하여 html에 링크하여 사용해보세요.
+        여행하다()
+        쉬다()
+
+        // 4. "당신은 자바 프로그래머인가요?"라고 confirm()으로 확인후 true면 "훌륭한 웹프로그래머이시군요"
+        // false이면 "다른 언어를 사용하시는 군요!" 출력
+        let java = confirm("당신은 자바 프로그래머인가요?")
+        if (java == true) {
+            document.write("훌륭한 웹프로그래머이시군요!")
+        } else {
+            document.write("다른언어를 사용하시는군요!")
+        }
+        
+        // 5. 커피값과 구매카운트를 입력받아서 결제금액을 계산 후 (커피값*구매카운트)
+        // 15000원 이상이면 "할인해드릴게요", 아니면 "정가로 내셔야해요"
+        let coffee = prompt("커피값은?")
+        let count = prompt("개수는?")
+        let total = parseInt(coffee) * parseInt(count)
+        if (total >= 15000) {
+            alert("할인해드릴게요")
+        } else {
+            alert("정가로 내셔야해요")
+        }
+
+        // 6. 먹고 싶은 음식과 가격을 입력받아서 
+        // 음식이 커피이고, 가격이 5000미만이면 “내가 살게요”
+        // 아니면 “네가 사세요”
+        let food = prompt("먹고 싶은 음식은?")
+        let price = prompt("가격은?")
+        if (food == "커피" && parseInt(price) < 5000) {
+            alert("내가 살게요")
+        } else {
+            alert("네가 사세요")
+        }
+
+        // 7. 지금은 오전인가요? 오후인가요?  물어보고,
+        // 오전이면 “굿모닝!” 3번 출력, 오후이면 “굿애프터눈!”5번출력
+        // 아니면 “굿나잇!” 10번 출력
+        let time = prompt("지금은 오전인가요? 오후인가요?")
+        if (time == "오전") {
+            for (let i=0; i < 3; i++){
+                document.write("굿모닝!<br>")
+            }
+        } else if (time == "오후") {
+            for (let i=0; i < 5; i++){
+                document.write("굿애프터눈!<br>")
+            }
+        } else {
+            for (let i=0; i < 10; i++){
+                document.write("굿나잇!<br>")
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
