@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#test" ).accordion();
+  } );
+
+  $( function() {
+    $( "#dialog" ).dialog();
+  } );
+  </script>
+</head>
+<body>
+ 
+    <div id="dialog" title="주말에 뭘할까">
+        <p>제부도 가야지!</p>
+      </div>
+
+<div id="test">
+  <h3>나의 시간표</h3>
+  <div>
+    <p>
+    노는게 제일 좋아
+    </p>
+  </div>
+  <h3>나의 운동</h3>
+  <div>
+    <p>
+    러닝
+    </p>
+  </div>
+  <h3>나의 공부</h3>
+  <div>
+    <p>
+    이번주 강의 복습
+    </p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+  </div>
+</div>
+ 
+ 
+</body>
+</html>

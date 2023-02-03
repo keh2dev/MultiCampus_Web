@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드라마 정보 사이트</title>
+    <link rel="stylesheet" href="bodystyle.css"> <!--배경 스타일 css-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script> <!--jsquery 사용-->
+    <script>
+    $(function () {
+      $('#drama1').click(function () {
+        //alert('b1클릭함.')
+        $.ajax({
+          url: "drama1.html",
+          success: function (x) {
+            $('#story').html(x)
+          }
+        })
+      }) //b1
+      $('#drama2').click(function () {
+        $.ajax({
+          url: "drama2.html",
+          success: function (x) {
+            $('#story').html(x)
+          }
+        })
+      }) //b2
+      $('#drama3').click(function () {
+        $.ajax({
+          url: "drama3.html",
+          success: function (x) {
+            $('#story').html(x)
+          }
+        })
+      }) //b3
+    }); // $
+    </script>
+</head>
+
+<body>
+<h1>지상파 드라마 정보</h1> 
+<hr>
+<table border="1">
+    <tr>
+        <th>지상파 드라마 순위</th>
+    </tr>
+    <tr>
+        <td>
+            <ol>
+                <li id="drama1">삼남매가 용감하게 <button id="drama1">줄거리</button></li>
+                <li id="drama2">내 눈에 콩깍지 <button id="drama2">줄거리</button></li>
+                <li id="drama3">태풍의 신부 <button id="drama2">줄거리</button> </li>
+            </ol>
+        </td>
+    </tr>
+</table>
+    <hr>
+    <div id="story" style="width: 500px; height: 500px; background: skyblue;"></div>
+</body>
+</html>
