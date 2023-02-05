@@ -1,0 +1,73 @@
+<!-- 
+    클라이언트 <- http -> 웹서버측(웹서버+was) <-> db
+    정적 페이지 요청(동일 페이지 제공)) / 동적 페이지 요청(클라이언트가 입력한 값에 따라 변경)
+    http란? Hyper Text Transfer Protocol : 클라이언트와 서버간 전송 규약
+    프론트 - 사용자와 직접 상호작용 - 측 주요 기술을 언어와 프레임워크로 나눠보자면
+    - 언어 : HTML, CSS, JavaScript(JS)
+    - 프레임워크 : react, vue, angular, bootstrap
+    백엔드 서버측 처리 기술로 언어와 프레임워크로 나눠보자면
+    - 언어 : java, php, c#, python, sql, node.js 등
+    - 프레임워크 : Spring, django, Express, .Net
+    tag: 본 데이터에 덧붙이는 메타 데이터 <tag명></tag명>
+    html은 head와 body로 구분.
+    head는 브라우저 윗부분, body는 브라우저 아래부분이라 생각하면 편함
+    f12 콘솔을 통해 사이트 및 코드 이상 여부 확인 가능
+-->
+<head>
+    <meta charset="UTF-8"> 
+    <!-- 문자인코딩 설정 -->
+    <link rel="stylesheet" href=""> 
+    <!--외부 css연결-->
+    <title>문서제목 설정</title>
+    <style>
+        /* css 정의 */
+        ol:hover {
+            color : red;
+        }
+    </style>
+    <script>
+        // 외부 js연결/정의
+    </script>
+
+    <body>        
+        이미지에 하이퍼링크 넣는 방법<br>
+        <a href="http://www.naver.com">
+        <img src="파일 및 경로" alt="이미지 로드 안될 때 대체 문구" width="가로" height="세로">
+        </a>
+        <br>
+        <hr color="red">
+
+        <ol>
+            <li>ol은 순서 표기</li>
+            <li>리스트</li>
+        </ol>
+        <ul>
+            <li style="background-color: lightgreen;">ul은 순서 상관 없는</li>
+            <li>목록</li>
+        </ul>
+        <hr>
+        <table border="1px" bordercolor="red">
+            <tr bgcolor="lightgreen" align="center">
+                <th colspan="2">메뉴</th> 
+                <!-- rowspan은 열 통합 -->
+                <th>가격</th><s></s>
+            </tr>
+            <tr>
+                <td>커피</td>
+                <td>라떼</td>
+                <td>3000원</td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pU4i0_O6cUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+        <hr>
+        <form action="/폼데이터 보내는 주소 및 파일 경로">
+            입력한 값 : <input type="text" id="text1"><br>
+            <textarea name="" id="text2" cols="30" rows="10"></textarea><br>
+            <input type="submit">
+        </form>
+    </body>
+
+</head>
