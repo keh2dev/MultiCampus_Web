@@ -1,0 +1,33 @@
+--ENAME의 글자수 검색
+SELECT LENGTH (ename) FROM hr.emp
+
+--JOB이 MANAGER인 사람의 ENAME 글자수 검색
+SELECT LENGTH (ename) FROM hr.EMP
+WHERE JOB ='MANAGER'
+
+--COMM이 null인 사람의 ENAME, JOB 검색
+SELECT ENAME, JOB FROM hr.EMP
+WHERE COMM IS NULL
+
+--COMM이 null이 아닌 사람의 HIREDATE 검색
+SELECT HIREDATE  FROM hr.EMP
+WHERE COMM IS NOT NULL
+
+--ENAME의 2번째글자부터 끝까지 검색
+SELECT SUBSTR(ENAME, 2) FROM hr.EMP
+
+--JOB의 1번째 글자부터 3번째 글자까지 검색
+SELECT SUBSTR(JOB, 1, 3) FROM HR.EMP
+
+--ENAME의 글자 중 K를 P으로 변경하여 검색
+SELECT REPLACE(ename, 'K', 'P') FROM HR.EMP
+
+--ENAME과 ENPNO을 이용하여 ‘7369번은 SMITH입니다'로 출력
+SELECT EMPNO || '번은 ' || ENAME || '입니다.' FROM hr.EMP
+
+--HIREDATE 이용하여 입사한 월과 요일을 출력
+SELECT TO_CHAR(HIREDATE, 'MONTH'),
+TO_CHAR(HIREDATE, 'DAY') FROM HR.EMP
+
+--JOB이 MANAGER이면 level1, SALESMAN이면 level2, 기타이면 level3라고 LEVEL_RESULT컬럼에 출력
+

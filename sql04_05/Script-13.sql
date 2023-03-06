@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT *
+FROM STUDENT_INFOMATION_1 si , DEPARTMENT_1 d 
+WHERE si.학과 = d.학과
+
+SELECT *
+FROM STUDENT_INFOMATION_1 si ,RECORD_1 r 
+WHERE si.학생번호 = r.학생번호 
+
+SELECT * FROM HR.STUDENT_INFOMATION_1 si WHERE 학생번호 IN 
+(SELECT 학생번호 FROM RECORD_1 r WHERE 성적 = 3.5);
+
+SELECT * FROM RECORD_1 r2  WHERE 강좌이름 = 
+(SELECT 강좌이름 FROM SUBJECT_1 s  WHERE 강의실='공학관110');
