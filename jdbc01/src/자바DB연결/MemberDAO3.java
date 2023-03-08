@@ -5,15 +5,16 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.util.Locale;
 
-import javax.naming.spi.DirStateFactory.Result;
+import 화면DB연결.MemberVO;
 
-public class MemberDAO2 {
+public class MemberDAO3 {
 
 	// 메서드를 만드는 것 ==> 메서드 정의(define)!
 	// 메서드를 정의했다고 실행되는 것은 아니다!
 	// 메서드를 쓰는 것 ==> 메서드 호출(call)!
 	
-	public int insert(String id, String pw, String name, String tel) {
+	public int insert(MemberVO bag) {
+		//1. 가방을 받아서 변수에 넣어주세요.
 		int result = 0;
 		
 		try {
@@ -44,10 +45,10 @@ public class MemberDAO2 {
 			// con부품으로 sql스트링에 있는 것 SQL부품으로 만들어주세요.
 			// R빼고, 인덱스 0부터 시작!!
 			// 유일하게 db은 인덱스가 1부터 시작!!
-			ps.setString(1, id); // ps.setInt(1, no);
-			ps.setString(2, pw);
-			ps.setString(3, name);
-			ps.setString(4, tel);
+			ps.setString(1, bag.getId()); 
+			ps.setString(2,	bag.getPw());
+			ps.setString(3, bag.getName());
+			ps.setString(4, bag.getTel());
 			// ==> insert into hr.MEMBER values ('a','a','a','a');
 			System.out.println("3. SQL문 부품(객체)으로 만들어주기 성공.");
 			result = ps.executeUpdate(); // 1이면 성공!
@@ -115,7 +116,7 @@ public class MemberDAO2 {
 		return result;
 	}
 
-	public int update(String id, String tel) {
+	public int update(MemberVO bag) {
 		int result = 0;
 		
 		try {
@@ -142,8 +143,8 @@ public class MemberDAO2 {
 
 			String sql = "update hr.MEMBER set tel = ? where id = ? ";
 			PreparedStatement ps = con.prepareStatement(sql); // PreparedStatement
-			ps.setString(1, tel);
-			ps.setString(2, id);
+			ps.setString(1, bag.getTel());
+			ps.setString(2, bag.getId()); 
 			// con부품으로 sql스트링에 있는 것 SQL부품으로 만들어주세요.
 			System.out.println("3. SQL문 부품(객체)으로 만들어주기 성공.");
 
