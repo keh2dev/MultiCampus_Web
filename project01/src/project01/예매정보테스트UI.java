@@ -1,4 +1,4 @@
-package 화면DB연결;
+package project01;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -16,28 +16,28 @@ import 자바DB연결.BBSDAO;
 import 자바DB연결.BbsVO;
 import 자바DB연결.MemberDAO3;
 
-public class BbsUI {
+public class 예매정보테스트UI {
 
 	public static void main(String[] args) {
 		JFrame f = new JFrame();
 		f.setTitle("나의 게시판 화면");
 		f.setSize(430, 520);
 		
-		JLabel l1 = new JLabel("<<<<<게시판화면>>>>>");
-		JLabel l2 = new JLabel("NO");
-		JLabel l3 = new JLabel("제목");
-		JLabel l4 = new JLabel("내용");
-		JLabel l5 = new JLabel("작성자");
+		JLabel l1 = new JLabel("<<<<예매정보테스트>>>>>");
+		JLabel l2 = new JLabel("예매번호");
+		JLabel l3 = new JLabel("공연ID");
+		JLabel l4 = new JLabel("예매전화번호");
+		JLabel l5 = new JLabel("예매일자");
 		
 		JTextField t1 = new JTextField(10);
 		JTextField t2 = new JTextField(10);
 		JTextField t3 = new JTextField(10);
 		JTextField t4 = new JTextField(10);
 		
-		JButton b1 = new JButton("게시물작성");
-		JButton b2 = new JButton("게시물삭제");
-		JButton b3 = new JButton("게시물수정");
-		JButton b4 = new JButton("게시물검색");
+		JButton b1 = new JButton("예매하기");
+		JButton b2 = new JButton("예매취소");
+		JButton b3 = new JButton("예매일자수정");
+		JButton b4 = new JButton("예매조회");
 		
 		FlowLayout flow = new FlowLayout();
 		Font font = new Font("gungseo", Font.BOLD, 40);
@@ -49,22 +49,22 @@ public class BbsUI {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("게시물작성처리");
-				String no = t1.getText();
-				int no2 = Integer.parseInt(no);
-				String title = t2.getText();
-				String content = t3.getText();
-				String writer = t4.getText();
+				System.out.println("예매하기");
+				String 예매번호 = t1.getText();
+				int 예매번호2 = Integer.parseInt(예매번호);
+				String 공연ID = t2.getText();
+				String 예매전화번호 = t3.getText();
+				String 예매일자 = t4.getText();
 				
-				if (no.equals("")) { // 기본형 4가지만 ==로 값 비교 가능!
-					JOptionPane.showMessageDialog(f, "NO는 필수입력항목입니다.");
+				if (예매번호.equals("")) { // 기본형 4가지만 ==로 값 비교 가능!
+					JOptionPane.showMessageDialog(f, "필수입력항목입니다.");
 				}
 				
-				BBSDAO dao = new BBSDAO();
+				예매정보DAO dao = new 예매정보DAO();
 				//1.가방을 만들어주세요.
-				BbsVO bag = new BbsVO();
+				예매정보VO bag = new 예매정보VO();
 				//2.가방에 값들을 넣어주세요.
-				bag.setNo(no2);
+				bag.setNo();
 				bag.setTitle(title);
 				bag.setContent(content);;
 				bag.setWriter(writer);;

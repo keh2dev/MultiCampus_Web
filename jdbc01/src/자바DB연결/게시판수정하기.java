@@ -11,6 +11,6 @@ public class 게시판수정하기 {
 		int no = sc.nextInt();
 		String CONTENT = sc.next();
 		BBSDAO dao = new BBSDAO();
-		dao.update(no, CONTENT);
+		//dao.update(no, CONTENT);
 	}
 }

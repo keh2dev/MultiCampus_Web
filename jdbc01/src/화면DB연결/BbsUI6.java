@@ -12,13 +12,15 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 import 자바DB연결.BBSDAO;
 import 자바DB연결.BbsVO;
 import 자바DB연결.MemberDAO3;
 
-public class BbsUI {
+public class BbsUI6 {
 
-	public static void main(String[] args) {
+	public static void open() {
 		JFrame f = new JFrame();
 		f.setTitle("나의 게시판 화면");
 		f.setSize(430, 520);

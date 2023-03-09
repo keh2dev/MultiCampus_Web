@@ -13,7 +13,7 @@ public class 게시판글쓰기 {
 		String CONTENT = sc.next();
 		String WRITER = sc.next();
 		BBSDAO dao = new BBSDAO();
-		dao.insert(NO, TITLE, CONTENT, WRITER);
+		//dao.insert(NO, TITLE, CONTENT, WRITER);
 
 	}
 
