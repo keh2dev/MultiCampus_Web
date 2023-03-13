@@ -1,6 +1,6 @@
 package project01;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class 공연VO {
 	private String 공연ID;
@@ -9,7 +9,14 @@ public class 공연VO {
 	private Date 공연시작일;
 	private Date 공연종료일;
 	private int 가격;
+	private String 이미지파일;
 	
+	public String get이미지파일() {
+		return 이미지파일;
+	}
+	public void set이미지파일(String 이미지파일) {
+		this.이미지파일 = 이미지파일;
+	}
 	public String get공연ID() {
 		return 공연ID;
 	}
@@ -31,11 +38,13 @@ public class 공연VO {
 	public Date get공연시작일() {
 		return 공연시작일;
 	}
-	public void set공연시작일(Date 공연시작일) {
-		this.공연시작일 = 공연시작일;
-	}
+
 	public Date get공연종료일() {
 		return 공연종료일;
+	}
+
+	public void set공연시작일(Date 공연시작일) {
+		this.공연시작일 = 공연시작일;
 	}
 	public void set공연종료일(Date 공연종료일) {
 		this.공연종료일 = 공연종료일;
@@ -50,7 +59,7 @@ public class 공연VO {
 	@Override
 	public String toString() {
 		return "공연VO [공연ID=" + 공연ID + ", 제목=" + 제목 + ", 위치=" + 위치 + ", 공연시작일=" + 공연시작일 + ", 공연종료일=" + 공연종료일 + ", 가격="
-				+ 가격 + "]";
+				+ 가격 + ", 이미지파일=" + 이미지파일 + "]";
 	}
 	
 	
