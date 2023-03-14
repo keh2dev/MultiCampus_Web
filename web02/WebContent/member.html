@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원정보 페이지</title>
+<script type = "text/javascript">
+	alert('회원정보 페이지입니다. 반갑습니다!')
+</script>
+<style type="text/css">
+body { /* 컨트롤 + / : 자동주석, 태그선택! */
+	background: #D7FFF1;
+}
+
+botton {
+	background: #285943;
+}
+
+.t1 { /* .은 클래스 선택!, 여러개 선택!! */
+	background: #8CD790;
+	width: 150px;
+	text-align: center;
+}
+
+#b1 {/* #은 아이디 선택!, 특정한 것 한개만 선택!!  */
+	color : #77AF9C
+}
+
+#b2 {/* #은 아이디 선택!, 특정한 것 한개만 선택!!  */
+	color : #285943
+	
+}
+</style>
+
+</head>
+<body>
+	<h3>회원정보 페이지</h3>
+	<hr>
+	<a href="index.html">
+		<button id ="b1">내 홈페이지로</button>
+	</a>
+	<hr>
+
+	<table border="1">
+		<tr>
+			<td class="t1">회원가입</td>
+			<td><a href="insert.html">
+					<button>레츠고!</button>
+			</a></td>
+		</tr>
+		<!-- delete.html을 만드는데, id만 입력해서 전송 -->
+		<!-- delete.jsp를 만들어서 전송된 id확인! -->
+		<tr>
+			<td class="t1">회원탈퇴</td>
+			<td><a href="delete.html">
+					<button>레츠고!</button>
+			</a></td>
+		</tr>
+		<!-- update.html을 만드는데, id,tel만 입력해서 전송 -->
+		<!-- delete.jsp를 만들어서 전송된 id,tel확인! -->
+		<tr>
+			<td class="t1">회원수정</td>
+			<td><a href="update.html">
+					<button>레츠고!</button>
+			</a></td>
+		</tr>
+		<tr>
+			<td class="t1">회원검색</td>
+			<td><a href="one.html">
+					<button>레츠고!</button>
+			</a></td>
+		</tr>
+		<tr>
+			<td class="t1">회원전체목록<br>(여러명)</td>
+			<td><a href="list.html">
+					<button>레츠고!</button>
+			</a></td>
+		</tr>
+	</table>
+
+</body>
+</html>
