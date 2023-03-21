@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function me(){
+		nameValue = document.getElementById("name").value	
+		companyValue = document.getElementById("company").value
+		positionValue = document.getElementById("position").value
+		genderValue = document.getElementById("gender").value
+
+		divTag = document.getElementById("result")
+		if (genderValue == '남자') {
+			divTag.innerHTML  = "<img src=img/man.png width=500 height = 300>"
+		} else if (genderValue == '여자'){
+			divTag.innerHTML  = "<img src=img/woman.png width=500 height = 300> "
+		} else {
+			divTag.innerHTML  = "<img src=img/no.jpg width=500 height = 300>"
+		}
+	}
+
+	function bag() {
+		idValue = document.getElementById("user").value
+		//alert(idValue.length)
+		divTag = document.getElementById("result")
+		if (idValue.length >= 5) {
+			divTag.innerHTML  = "<img src=img/yes.jpg width=500 height = 300>"
+		} else {
+			divTag.innerHTML  = "<img src=img/no.jpg width=500 height = 300>"
+		}
+	}
+	function bag2() {
+		pw1Value = document.getElementById("pw1").value	
+		pw2Value = document.getElementById("pw2").value	
+		divTag = document.getElementById("result")
+		
+		if (pw1Value == pw2Value) {
+			divTag.innerHTML  = "<img src=img/yes.jpg width=500 height = 300>"
+		} else {
+			divTag.innerHTML  = "<img src=img/no.jpg width=500 height = 300>"
+		}
+	}
+</script>
+
+</head>
+<body>
+	이름 : 
+	<input id='name' value='홍길동'>
+	<br>
+	회사명 : 
+	<input id='company' value='멀티'>
+	<br>
+	직책 : 
+	<input id='position' value='팀장'>
+	<br>
+	성별 : 
+	<input id='gender' value='남자'>
+	<br>
+	<button onclick="me()">확인</button>
+
+	<hr>
+
+	가방안에 들어있는 물건 중 제일 중요한 것 : 
+	<input id='first' value=''>
+	<br>
+	<button onclick="bag()">제일 중요한 것 확인</button>
+
+	<hr>
+
+	가방안에 들어있는 물건 중 두번째 중요한 것 : 
+	<input id='second' value=''>
+	<br>
+	<button onclick="bag2()">두번째 중요한 것 확인</button>
+
+	<hr>
+
+	<div id="result">결과창</div>
+
+</body>
+</html>
