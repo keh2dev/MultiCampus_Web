@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mock2>
+	<drug>
+		<id>1</id>
+		<name>Bisoprolol Fumarate</name>
+		<company>Rebel Distributors Corp</company>
+		<code>21695-667</code>
+	</drug>
+	<drug>
+		<id>2</id>
+		<name>Levofloxacin</name>
+		<company>AvKARE, Inc.</company>
+		<code>42291-371</code>
+	</drug>
+	<drug>
+		<id>3</id>
+		<name>Bioelectro Night</name>
+		<company>A&amp;Z Pharmaceutical, Inc.</company>
+		<code>62211-267</code>
+	</drug>
+	<drug>
+		<id>4</id>
+		<name>Hydrogen Peroxide</name>
+		<company>Shopko Stores Operating Co, LLC</company>
+		<code>37012-871</code>
+	</drug>
+	<drug>
+		<id>5</id>
+		<name>Dicyclomine</name>
+		<company>Major Pharmaceuticals</company>
+		<code>0904-0195</code>
+	</drug>
+	<drug>
+		<id>6</id>
+		<name>LBEL REPLENISHING FOUNDATION SPF 14</name>
+		<company>Ventura Corporation LTD</company>
+		<code>13537-257</code>
+	</drug>
+	<drug>
+		<id>7</id>
+		<name>Rivastigmine Tartrate</name>
+		<company>Apotex Corp.</company>
+		<code>60505-3221</code>
+	</drug>
+	<drug>
+		<id>8</id>
+		<name>Allure Vaporizing Chest Rub</name>
+		<company>Universal Distribution Center LLC</company>
+		<code>52000-003</code>
+	</drug>
+	<drug>
+		<id>9</id>
+		<name>Amitriptyline Hydrochloride</name>
+		<company>STAT Rx USA LLC</company>
+		<code>42549-605</code>
+	</drug>
+	<drug>
+		<id>10</id>
+		<name>Lithium Carbonate</name>
+		<company>Carilion Materials Management</company>
+		<code>68151-0245</code>
+	</drug>
+	<drug>
+		<id>11</id>
+		<name>Multi Flower</name>
+		<company>Energique, Inc.</company>
+		<code>44911-0022</code>
+	</drug>
+	<drug>
+		<id>12</id>
+		<name>cortisone</name>
+		<company>CVS Pharmacy</company>
+		<code>59779-369</code>
+	</drug>
+	<drug>
+		<id>13</id>
+		<name>Protective Nail and skin</name>
+		<company>Eduard Gerlach GmbH</company>
+		<code>45264-002</code>
+	</drug>
+	<drug>
+		<id>14</id>
+		<name>Zolpidem tartrate</name>
+		<company>Bryant Ranch Prepack</company>
+		<code>63629-4708</code>
+	</drug>
+	<drug>
+		<id>15</id>
+		<name>Spironolactone</name>
+		<company>American Health Packaging</company>
+		<code>68084-207</code>
+	</drug>
+	<drug>
+		<id>16</id>
+		<name>Big Lots</name>
+		<company>Lornamead</company>
+		<code>62721-0214</code>
+	</drug>
+	<drug>
+		<id>17</id>
+		<name>CASODEX</name>
+		<company>AstraZeneca Pharmaceuticals LP</company>
+		<code>0310-0705</code>
+	</drug>
+	<drug>
+		<id>18</id>
+		<name>LANOXIN</name>
+		<company>PD-Rx Pharmaceuticals, Inc.</company>
+		<code>55289-098</code>
+	</drug>
+	<drug>
+		<id>19</id>
+		<name>TISSEEL</name>
+		<company>Baxter Healthcare Corporation</company>
+		<code>0944-4201</code>
+	</drug>
+	<drug>
+		<id>20</id>
+		<name>clonidine hydrochloride</name>
+		<company>A-S Medication Solutions LLC</company>
+		<code>54569-2801</code>
+	</drug>
+	<drug>
+		<id>21</id>
+		<name>Profilnine</name>
+		<company>GRIFOLS USA, LLC</company>
+		<code>68516-3201</code>
+	</drug>
+	<drug>
+		<id>22</id>
+		<name>ATACAND</name>
+		<company>Bryant Ranch Prepack</company>
+		<code>63629-4462</code>
+	</drug>
+	<drug>
+		<id>23</id>
+		<name>AQUAFRESH</name>
+		<company>GlaxoSmithKline Consumer Healthcare LP</company>
+		<code>0135-0530</code>
+	</drug>
+	<drug>
+		<id>24</id>
+		<name>Pyridostigmine Bromide</name>
+		<company>American Health Packaging</company>
+		<code>68084-494</code>
+	</drug>
+	<drug>
+		<id>25</id>
+		<name>Instant Hand Sanitizer</name>
+		<company>Hydrox Laboratories</company>
+		<code>10565-072</code>
+	</drug>
+	<drug>
+		<id>26</id>
+		<name>Sterile Diluent for Allergenic Extract</name>
+		<company>Antigen Laboratories, Inc.</company>
+		<code>49288-9933</code>
+	</drug>
+	<drug>
+		<id>27</id>
+		<name>cefuroxime axetil</name>
+		<company>Preferred Pharmaceuticals, Inc.</company>
+		<code>68788-9701</code>
+	</drug>
+	<drug>
+		<id>28</id>
+		<name>Acetaminophen And Codeine</name>
+		<company>RedPharm Drug Inc.</company>
+		<code>67296-0544</code>
+	</drug>
+	<drug>
+		<id>29</id>
+		<name>NS Support</name>
+		<company>Restivo Chiropractic</company>
+		<code>61062-0009</code>
+	</drug>
+	<drug>
+		<id>30</id>
+		<name>Equisetum cum sulfure tosta 6</name>
+		<company>Uriel Pharmacy Inc.</company>
+		<code>48951-4060</code>
+	</drug>
+	<drug>
+		<id>31</id>
+		<name>Anastrozole</name>
+		<company>American Health Packaging</company>
+		<code>68084-448</code>
+	</drug>
+	<drug>
+		<id>32</id>
+		<name>Meloxicam</name>
+		<company>Lake Erie Medical DBA Quality Care Products LLC</company>
+		<code>35356-746</code>
+	</drug>
+	<drug>
+		<id>33</id>
+		<name>PREMIER VALUE ALLERGY</name>
+		<company>TAI GUK PHARM. CO., LTD.</company>
+		<code>68169-0127</code>
+	</drug>
+	<drug>
+		<id>34</id>
+		<name>Leader Antacid</name>
+		<company>Cardinal Health</company>
+		<code>37205-535</code>
+	</drug>
+	<drug>
+		<id>35</id>
+		<name>Triamcinolone Acetonide</name>
+		<company>Physicians Total Care, Inc.</company>
+		<code>54868-0843</code>
+	</drug>
+	<drug>
+		<id>36</id>
+		<name>Para Grass Pollen</name>
+		<company>Nelco Laboratories, Inc.</company>
+		<code>36987-2349</code>
+	</drug>
+	<drug>
+		<id>37</id>
+		<name>SUPER ORIGIN CUSHION COMPLETE CONTROL</name>
+		<company>NATURE REPUBLIC CO., LTD.</company>
+		<code>51346-260</code>
+	</drug>
+	<drug>
+		<id>38</id>
+		<name>MS Contin</name>
+		<company>Purdue Pharma LP</company>
+		<code>59011-260</code>
+	</drug>
+	<drug>
+		<id>39</id>
+		<name>Amoebatox</name>
+		<company>Apotheca Company</company>
+		<code>57520-0024</code>
+	</drug>
+	<drug>
+		<id>40</id>
+		<name>ORIGINAL POWER REFIRMING AMPOULE</name>
+		<company>NATURE REPUBLIC CO., LTD.</company>
+		<code>51346-218</code>
+	</drug>
+	<drug>
+		<id>41</id>
+		<name>BACTOFLAM</name>
+		<company>WHITE MANUFACTURING INC. DBA MICRO WEST</company>
+		<code>61657-0052</code>
+	</drug>
+	<drug>
+		<id>42</id>
+		<name>Zarontin</name>
+		<company>Parke-Davis Div of Pfizer Inc</company>
+		<code>0071-2418</code>
+	</drug>
+	<drug>
+		<id>43</id>
+		<name>Bodycology</name>
+		<company>Landy International</company>
+		<code>51706-115</code>
+	</drug>
+	<drug>
+		<id>44</id>
+		<name>Caffeine Citrate</name>
+		<company>Sun Pharma Global FZE</company>
+		<code>47335-289</code>
+	</drug>
+	<drug>
+		<id>45</id>
+		<name>Phentermine Hydrochloride</name>
+		<company>Blenheim Pharmacal, Inc.</company>
+		<code>10544-593</code>
+	</drug>
+	<drug>
+		<id>46</id>
+		<name>NATURCOKSINUM</name>
+		<company>HOMEOLAB USA INC</company>
+		<code>60512-6007</code>
+	</drug>
+	<drug>
+		<id>47</id>
+		<name>Lovastatin</name>
+		<company>Lupin Pharmaceuticals, Inc.</company>
+		<code>68180-468</code>
+	</drug>
+	<drug>
+		<id>48</id>
+		<name>Carbon Dioxide</name>
+		<company>Matheson Tri-Gas, Inc.</company>
+		<code>55037-401</code>
+	</drug>
+	<drug>
+		<id>49</id>
+		<name>Oxygen</name>
+		<company>Georgia Respiratory HomeCare &amp; Medical Equipment LLC</company>
+		<code>16408-2714</code>
+	</drug>
+	<drug>
+		<id>50</id>
+		<name>lubricating plus eye</name>
+		<company>Meijer Distribution Inc</company>
+		<code>41250-323</code>
+	</drug>
+	<drug>
+		<id>51</id>
+		<name>ReCreate Foundation</name>
+		<company>Tarte Inc</company>
+		<code>51060-005</code>
+	</drug>
+	<drug>
+		<id>52</id>
+		<name>Standardized Redtop Grass Pollen</name>
+		<company>Nelco Laboratories, Inc.</company>
+		<code>36987-2363</code>
+	</drug>
+	<drug>
+		<id>53</id>
+		<name>OXCARBAZEPINE</name>
+		<company>Golden State Medical Supply</company>
+		<code>60429-063</code>
+	</drug>
+	<drug>
+		<id>54</id>
+		<name>Detoxifier</name>
+		<company>Newton Laboratories, Inc.</company>
+		<code>55714-1500</code>
+	</drug>
+	<drug>
+		<id>55</id>
+		<name>Pollens - Weeds and Garden Plants, Ragweed. Western Ambrosia psilostachya</name>
+		<company>Jubilant HollisterStier LLC</company>
+		<code>65044-2308</code>
+	</drug>
+	<drug>
+		<id>56</id>
+		<name>Gabapentin</name>
+		<company>Cardinal Health</company>
+		<code>55154-1486</code>
+	</drug>
+	<drug>
+		<id>57</id>
+		<name>Levofloxacin</name>
+		<company>Dr. Reddy's Laboratories Limited</company>
+		<code>55111-281</code>
+	</drug>
+	<drug>
+		<id>58</id>
+		<name>ONDANSETRON HYDROCHLORIDE</name>
+		<company>Unit Dose Services</company>
+		<code>50436-0131</code>
+	</drug>
+	<drug>
+		<id>59</id>
+		<name>Simply White</name>
+		<company>Tom's of Maine, Inc.</company>
+		<code>51009-148</code>
+	</drug>
+	<drug>
+		<id>60</id>
+		<name>Clear Antibacterial Hand</name>
+		<company>Blue Cross Laboratories, Inc</company>
+		<code>22431-582</code>
+	</drug>
+	<drug>
+		<id>61</id>
+		<name>Lansoprazole</name>
+		<company>SIMPLY RIGHT (Sam's West, Inc.)</company>
+		<code>68196-019</code>
+	</drug>
+	<drug>
+		<id>62</id>
+		<name>Candesartan cilexetil</name>
+		<company>Par Pharmaceutical Inc.</company>
+		<code>49884-658</code>
+	</drug>
+	<drug>
+		<id>63</id>
+		<name>KOCHIA SCOPARIA POLLEN</name>
+		<company>ALK-Abello, Inc.</company>
+		<code>0268-6720</code>
+	</drug>
+	<drug>
+		<id>64</id>
+		<name>Camilia</name>
+		<company>Laboratoires Boiron</company>
+		<code>0220-9054</code>
+	</drug>
+	<drug>
+		<id>65</id>
+		<name>Triamterene hydrochlorothiazide</name>
+		<company>BluePoint Laboratories</company>
+		<code>68001-215</code>
+	</drug>
+	<drug>
+		<id>66</id>
+		<name>PREZISTA</name>
+		<company>Janssen Products LP</company>
+		<code>59676-562</code>
+	</drug>
+	<drug>
+		<id>67</id>
+		<name>CLARINS BROAD SPECTRUM SPF 15 - Sunscreen Multi-Active Day Early wrinkle correcting</name>
+		<company>Laboratoires Clarins S.A.</company>
+		<code>58668-1103</code>
+	</drug>
+	<drug>
+		<id>68</id>
+		<name>Extra Strength Pain Relief</name>
+		<company>WALGREEN CO.</company>
+		<code>0363-0159</code>
+	</drug>
+	<drug>
+		<id>69</id>
+		<name>Gold Bond Pain Relieving Foot Roll On</name>
+		<company>Chattem, Inc.</company>
+		<code>41167-0176</code>
+	</drug>
+	<drug>
+		<id>70</id>
+		<name>PRAVASTATIN SODIUM</name>
+		<company>Clinical Solutions Wholesale</company>
+		<code>58118-0169</code>
+	</drug>
+	<drug>
+		<id>71</id>
+		<name>Borago Lavender Varicose Relief</name>
+		<company>Uriel Pharmacy Inc.</company>
+		<code>48951-2076</code>
+	</drug>
+	<drug>
+		<id>72</id>
+		<name>Caduet</name>
+		<company>Physicians Total Care, Inc.</company>
+		<code>54868-5672</code>
+	</drug>
+	<drug>
+		<id>73</id>
+		<name>Oral Dent</name>
+		<company>International Cosmetics Ltd.</company>
+		<code>66969-6022</code>
+	</drug>
+	<drug>
+		<id>74</id>
+		<name>WEAKNESS</name>
+		<company>Natural Health Supply</company>
+		<code>64117-240</code>
+	</drug>
+	<drug>
+		<id>75</id>
+		<name>Doxazosin mesylate</name>
+		<company>Greenstone LLC</company>
+		<code>59762-2310</code>
+	</drug>
+	<drug>
+		<id>76</id>
+		<name>Western Family Hemorrhoidal</name>
+		<company>Western Family Food, Inc.</company>
+		<code>55312-035</code>
+	</drug>
+	<drug>
+		<id>77</id>
+		<name>health mart night time</name>
+		<company>McKesson</company>
+		<code>62011-0083</code>
+	</drug>
+	<drug>
+		<id>78</id>
+		<name>Endopure Testos-Male</name>
+		<company>Apotheca Company</company>
+		<code>57520-0143</code>
+	</drug>
+	<drug>
+		<id>79</id>
+		<name>Lisinopril</name>
+		<company>American Health Packaging</company>
+		<code>68084-199</code>
+	</drug>
+	<drug>
+		<id>80</id>
+		<name>Hesol Rim Jean-Aeck</name>
+		<company>Ecomine Co Ltd</company>
+		<code>51270-113</code>
+	</drug>
+	<drug>
+		<id>81</id>
+		<name>Valacyclovir Hydrochloride</name>
+		<company>Rebel Distributors Corp</company>
+		<code>21695-832</code>
+	</drug>
+	<drug>
+		<id>82</id>
+		<name>Sani Professional Brand Sani-Hands BasicsHand Wipes</name>
+		<company>Professional Disposables International, Inc.</company>
+		<code>10819-7007</code>
+	</drug>
+	<drug>
+		<id>83</id>
+		<name>Ibuprofen</name>
+		<company>WALGREEN CO.</company>
+		<code>0363-0392</code>
+	</drug>
+	<drug>
+		<id>84</id>
+		<name>Elgin Pain Relief</name>
+		<company>Eco-Logics, Inc.</company>
+		<code>30056-004</code>
+	</drug>
+	<drug>
+		<id>85</id>
+		<name>Neutrogena Wet Skin Swim Humidity Sweat</name>
+		<company>Neutrogena Corporation</company>
+		<code>10812-872</code>
+	</drug>
+	<drug>
+		<id>86</id>
+		<name>US Airways RON Kit</name>
+		<company>US Airways, Inc</company>
+		<code>58715-001</code>
+	</drug>
+	<drug>
+		<id>87</id>
+		<name>Allergy Relief D</name>
+		<company>Shopko Stores Operating Co., LLC</company>
+		<code>37012-013</code>
+	</drug>
+	<drug>
+		<id>88</id>
+		<name>PREDNISOLONE ACETATE</name>
+		<company>H.J. Harkins Company, Inc.</company>
+		<code>52959-265</code>
+	</drug>
+	<drug>
+		<id>89</id>
+		<name>DEXTROSE</name>
+		<company>Cardinal Health</company>
+		<code>55154-2887</code>
+	</drug>
+	<drug>
+		<id>90</id>
+		<name>Bella Flore</name>
+		<company>Natureplex LLC</company>
+		<code>67234-022</code>
+	</drug>
+	<drug>
+		<id>91</id>
+		<name>Medi-Pak Performance Antimicrobial with Aloe</name>
+		<company>McKesson Medical-Surgical Inc.</company>
+		<code>68599-5303</code>
+	</drug>
+	<drug>
+		<id>92</id>
+		<name>Amlodipine besylate and Atorvastatin calcium</name>
+		<company>Dr. Reddy's Laboratories Inc</company>
+		<code>43598-323</code>
+	</drug>
+	<drug>
+		<id>93</id>
+		<name>Loxapine</name>
+		<company>Mylan Pharmaceuticals Inc.</company>
+		<code>0378-7010</code>
+	</drug>
+	<drug>
+		<id>94</id>
+		<name>Potassium Chloride in Dextrose and Sodium Chloride</name>
+		<company>B. Braun Medical Inc.</company>
+		<code>0264-7655</code>
+	</drug>
+	<drug>
+		<id>95</id>
+		<name>Neutrogena Healthy Skin Enhancer</name>
+		<company>Neutrogena Corporation</company>
+		<code>10812-170</code>
+	</drug>
+	<drug>
+		<id>96</id>
+		<name>Doxycycline Hyclate</name>
+		<company>AvPAK</company>
+		<code>50268-277</code>
+	</drug>
+	<drug>
+		<id>97</id>
+		<name>health mart allergy complete d</name>
+		<company>McKesson</company>
+		<code>62011-0055</code>
+	</drug>
+	<drug>
+		<id>98</id>
+		<name>IMAGE ESSENTIALS</name>
+		<company>KMART CORPORATION</company>
+		<code>49738-350</code>
+	</drug>
+	<drug>
+		<id>99</id>
+		<name>Sinus Congestion and Pain</name>
+		<company>Meijer Distribution Inc</company>
+		<code>41250-935</code>
+	</drug>
+	<drug>
+		<id>100</id>
+		<name>Candida Heavy Metal Detox</name>
+		<company>King Bio Inc.</company>
+		<code>57955-2281</code>
+	</drug>
+</mock2>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.4.js"></script>
+<script type="text/javascript">
+	$(function() { 
+		$('#b1').click(function() {
+			$("#result").empty()//result 기존 내용 삭제
+			$.ajax({
+				url: "data/rank.json",
+				success: function(doc) {
+					alert(doc)
+					list = doc.rank
+					alert(list.length)
+					for (i = 0; i < list.length; i++) {
+						n= list[i].name
+						t =list[i].tel
+						$("#result").append(n + ", " + t + "<br>")
+					}//for
+				}//success
+			})//ajax
+		})//b1
+		
+		$('#b2').click(function() {
+			$("#result").empty()//result 기존 내용 삭제
+			$.ajax({
+				url: "data/MOCK_DATA.json",
+				success: function(doc) {
+					list = doc
+					alert(list.length)
+					for(i = 0; i < list.length; i++){
+						id = list[i].id
+						email = list[i].email
+						$('#result').append(id + ",  " + email + "<br>")
+					}//for
+				}//success
+			})//ajax
+		})//b2
+		
+		$('#b3').click(function() {
+			$("#result").empty()//result 기존 내용 삭제
+			$.ajax({
+				url: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Frss.hankyung.com%2Ffeed%2Fhei.xml&api_key=xupc3ndy1kgh8dsvwusibmdimvs4snlvmtql0jqg",
+				success: function(doc) {
+					alert("성공!>> " + doc)
+					list = doc.items
+					alert(list.length)
+					for (i = 0; i < list.length; i++) {
+						t = list[i].title
+						l = list[i].link
+						p = list[i].pubDate
+						a = list[i].author
+						$("#result").append("<a href= " + l + "> " + t + "</a> " + p + " " + " " + a + "<br>")
+					}
+				}//success
+			})//ajax
+		})//b3
+		
+		$('#b4').click(function() {
+			$('#result').empty() //기존에 result에 있었던 내
+			$.ajax({
+				url: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.sbs.co.kr%2Fnews%2FSectionRssFeed.do%3FsectionId%3D14%26plink%3DRSSREADER&api_key=xupc3ndy1kgh8dsvwusibmdimvs4snlvmtql0jqg",
+				success: function(doc) {
+						alert('성공!>> ' + doc)
+						list = doc.items
+						alert(list.length)
+						for(i = 0; i < list.length; i++){
+							t = list[i].title
+							l = list[i].link
+							p = list[i].pubDate
+							a = list[i].author
+							img = list[i].thumbnail
+							$('#result').append("<a href=" + l + ">" + t + "</a>" + p + " " + a + "<img src=" + img + " width=100 height=100>" + "<br>")
+						}
+				}//success
+			})//ajax
+		})//b4
+		
+		$('#b5').click(function() {
+			$('#result').empty() //기존에 result에 있었던 내
+			$.ajax({
+				url: "https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fwww.yonhapnewstv.co.kr%2Fcategory%2Fnews%2Fsports%2Ffeed%2F&api_key=xupc3ndy1kgh8dsvwusibmdimvs4snlvmtql0jqg",
+				success: function(doc) {
+						alert('성공!>> ' + doc)
+						list = doc.items
+						alert(list.length)
+						for(i = 0; i < list.length; i++){
+							t = list[i].title
+							l = list[i].link
+							p = list[i].pubDate
+							d = list[i].description
+							$('#result').append("<a href=" + l + ">" + t + "</a> " + p + "<br>" + d + "<hr>")
+						}
+				}//success
+			})//ajax
+		})//b4
+	}) //$
+</script>
+</head>
+<body bgcolor="lightgray">
+<button style='color: blue; background: pink' id ="b1">JSON1</button>
+<button style='color: blue; background: yellow' id ="b2">JSON2</button>
+<br><br>
+<button style='color: blue; background: lightblue' id ="b3">한경-연예</button>
+<button style='color: blue; background: lightgreen' id ="b4">SBS-연예</button>
+<button style='color: blue; background: lightorange' id ="b5">연합-스포츠</button>
+<hr color="red">
+<div id="result"></div>
+</body>
+</html>

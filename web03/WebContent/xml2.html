@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.4.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#b1").click(
+			function() {
+				$.ajax({
+					url : "data/mock2.xml",
+					success : function(doc) {
+						alert("xml요청 성공 >> " + doc)
+						list = $(doc).find("drug")
+						alert(list.length)
+						$("#result").append("id, name, company, code 순으로 값 저장 및 출력<br>")
+						for (i = 0; i < list.length; i++) {
+							id = $(list[i]).find("id").text()
+							name = $(list[i]).find("name").text()
+							company = $(list[i]).find("company").text()
+							code = $(list[i]).find("code").text()
+							$("#result").append( id + ", " + name + ", " + company + ", " + code + "<br>")
+							$.ajax({
+								url : "mock2.jsp",
+								data : {
+									id : id,
+									name : name,
+									company : company,
+									code : code
+								},
+								success : function() {
+									console.log("입력 성공")
+								}
+							})
+						}
+					}
+				}) 
+		})
+	})
+</script>
+</head>
+<body style="background-color: lightgray">
+	<button id="b1">XML받아오기-drug</button>
+	<hr>
+	<div id="result"><h3>결과 출력 창</h3></div>
+</body>
+</html>
