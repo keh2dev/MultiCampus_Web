@@ -7,14 +7,10 @@
 <title>Insert title here</title>
 <style>
 body {
-	background: pink;
+	background: cyan;
 }
 </style>
 </head>
-<body>게시물검색 처리 요청이 완료되었습니다.<hr>
-no : ${bag.no}<br>
-title : ${bag.title}<br>
-content : ${bag.content}<br>
-writer : ${bag.writer}
+<body>로그인 처리 요청 확인.
 </body>
 </html>

@@ -11,6 +11,11 @@ body {
 }
 </style>
 </head>
-<body>회원검색 처리 요청이 완료되었습니다.
+<body>회원검색 처리 요청이 완료되었습니다.<hr>
+id : ${bag.id}<br>
+pw : ${bag.pw}<br>
+url : ${bag.name}<br>
+tel : ${bag.tel}
+
 </body>
 </html>

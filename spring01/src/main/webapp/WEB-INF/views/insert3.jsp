@@ -7,14 +7,16 @@
 <title>Insert title here</title>
 <style>
 body {
-	background: pink;
+	background: yellow;
 }
 </style>
 </head>
-<body>게시물검색 처리 요청이 완료되었습니다.<hr>
-no : ${bag.no}<br>
-title : ${bag.title}<br>
-content : ${bag.content}<br>
-writer : ${bag.writer}
+<body>북마크 등록 처리 요청이 완료되었습니다.
+<hr>
+<%-- id : ${bag.id}<br> --%>
+name : ${bag.name}<br>
+url : ${bag.url}<br>
+img : <img src="resources/img/${bag.img}">
+
 </body>
 </html>

@@ -11,10 +11,12 @@ body {
 }
 </style>
 </head>
-<body>게시물검색 처리 요청이 완료되었습니다.<hr>
-no : ${bag.no}<br>
-title : ${bag.title}<br>
-content : ${bag.content}<br>
-writer : ${bag.writer}
+<body>북마크 검색 처리 요청이 완료되었습니다.<br>
+<hr>
+id : ${bag.id}<br>
+name : ${bag.name}<br>
+url : ${bag.url}<br>
+img : <img src="resources/img/${bag.img}">
+
 </body>
 </html>
