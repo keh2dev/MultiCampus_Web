@@ -17,6 +17,9 @@ body {
 name : ${bag.name}<br>
 url : ${bag.url}<br>
 img : <img src="resources/img/${bag.img}">
-
+<br>
+<button onclick="location.href='book.jsp'">첫 페이지로</button>
+<br>
+<a href="book.jsp"><button>첫페이지로~</button></a>
 </body>
 </html>

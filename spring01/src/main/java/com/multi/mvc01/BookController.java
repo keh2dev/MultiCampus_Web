@@ -21,25 +21,6 @@ public class BookController {
 	// 하나의 버튼 호출당 하나의 함수 연결!!
 	// 요청된 주소가 어떻게 될 때
 	// 바로 아래에 있는 메서드가 호출이 될지를 써줘야한다
-//	@RequestMapping("login")
-//	public String login(BookVO bag) {
-//		// 메서드의 입력변수(파라메터)로 변수를
-//		// 선언해두면, 컨트롤러내의 메서드내에서는
-//		// 1) bag을 만들어서
-//		// 2) 클라이언트로부터 전달된 데이터도 다 받아줌.
-//		// 3) bag에 데이터 다 넣어줌.
-//		System.out.println("login요청됨.");
-//		System.out.println(bag);
-//		// dao에게 insert요청!!!
-//		int result = dao.login(bag);//1, 0
-//		if (result ==1) {
-//			return "ok";
-//		} else {
-//			//view아래가 아니고, webapp아래
-//			//member.jsp로 돌아가고 싶은경우
-//			return "redirect:member.jsp";
-//		}
-//	}
 	
 	@RequestMapping("insert3")
 	public void insert(BookVO bag, Model model) {

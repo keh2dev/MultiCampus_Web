@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h3>전체 검색 화면입니다.</h3>
+<a href="list">모든 회원정보 가지고오기!</a>
+
 <h3>로그인 화면입니다. </h3>
 <hr color="red">
 <form action="login" method="get">

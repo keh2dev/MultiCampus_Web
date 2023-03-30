@@ -46,7 +46,7 @@ public class BbsDAO {
 			// SQL부품으로 만들어주어야 함.
 			// PreparedStatement가 SQL부품!!
 
-			String sql = "select * from bbs";
+			String sql = "select * from bbs order by no desc";
 			PreparedStatement ps = con.prepareStatement(sql); // PreparedStatement
 			// 삭제!!!! ps.setString(1, id);
 			System.out.println("3. SQL문 부품(객체)으로 만들어주기 성공.");
@@ -195,10 +195,11 @@ public class BbsDAO {
 			// String data = JOptionPane.showInputDialog("이름입력"); //String, 임아무개
 			System.out.println("2. mySQL 연결 성공.");
 
-			String sql = "update bbs set CONTENT = ? where NO = ? ";
+			String sql = "update bbs set TITLE= ?, CONTENT = ? where NO = ? ";
 			PreparedStatement ps = con.prepareStatement(sql); // PreparedStatement
-			ps.setString(1, bag.getContent());
-			ps.setInt(2, bag.getNo());
+			ps.setString(1, bag.getTitle());
+			ps.setString(2, bag.getContent());
+			ps.setInt(3, bag.getNo());
 			System.out.println("3. SQL문 부품(객체)으로 만들어주기 성공.");
 
 			ps.executeUpdate(); // insert, update, delete문만!! sql문 실행결과가 int

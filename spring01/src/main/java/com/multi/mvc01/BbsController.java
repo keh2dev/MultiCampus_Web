@@ -1,5 +1,7 @@
 package com.multi.mvc01;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -61,7 +63,24 @@ public class BbsController {
 	}
 
 	@RequestMapping("list2.multi")
-	public void list() {
+	public void list(Model model) {
+		ArrayList<BbsVO> list = dao.list();
+		model.addAttribute("list", list);
+	}
+	
+	@RequestMapping("update22.multi")
+	public void update2(int no, Model model) {
+		System.out.println("update22요청됨.");
+		System.out.println(no);
+		System.out.println(dao);
+		BbsVO bag = dao.one(no);
+		model.addAttribute("bag", bag);
+	}
+	
+	@RequestMapping("insert22.multi")
+	public void insert2() {
+		System.out.println("insert22요청됨.");
 		
 	}
+	
 }

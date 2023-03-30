@@ -7,12 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h3>북마크 전체검색</h3>
+<h3>북마크 전체 검색</h3>
 <hr>
-<a href="list3">가져오기</a>
+<a href="list3">리스트 전체 확인</a>
 <hr color="red">
 <h3>북마크 검색</h3>
 <hr>
+<a href="one3?id=2">id:2 검색</a><br>
+<a href="one3?id=3">id:3 검색</a><br>
 <form action="one3" method="get">
 	id : <input name="id" value="2"><br>
 	<button type="submit">서버로 전송</button>
