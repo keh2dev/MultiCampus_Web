@@ -29,7 +29,7 @@ td {
 
 .short {
 	  
-	width : 100px
+	width : 150px
 }
 
 .long {

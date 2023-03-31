@@ -7,15 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 <%
-if(session.getAttribute("count")==null){
-	out.print("아무도 방문하지 않았어...");
-} else {
-	out.print("조회수 : " + session.getAttribute("count") );
-}
+	session.setAttribute("count", 100);
 %>
-
 <hr>
+시작 세션 카운트 : <%= session.getAttribute("count")%>, ${count}
+<a href="session속성가지고오기2.jsp">session속성가지고오기2.jsp</a>
 </body>
 </html>

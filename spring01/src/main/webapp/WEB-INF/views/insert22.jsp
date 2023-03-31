@@ -17,7 +17,7 @@ body {
 <form action="insert2.multi" method="get">
 	title : <input name="title" value="오늘은~목요일"><br>
 	content : <input name="content" value="내일은~금요일"><br>
-	writer : <input name="writer" value="테스트맨"><br>
+	writer : ${id} <input type="hidden" name="writer" value="${id}"><br>
 	<button type="submit">서버로 전송</button>
 </form>
 <hr color="red">

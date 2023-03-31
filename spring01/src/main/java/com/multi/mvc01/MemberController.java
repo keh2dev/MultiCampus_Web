@@ -2,6 +2,8 @@ package com.multi.mvc01;
 
 import java.util.ArrayList;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,7 +26,7 @@ public class MemberController {
 	// 요청된 주소가 어떻게 될 때
 	// 바로 아래에 있는 메서드가 호출이 될지를 써줘야한다
 	@RequestMapping("login")
-	public String login(MemberVO bag) {
+	public String login(MemberVO bag, HttpSession session) {
 		// 메서드의 입력변수(파라메터)로 변수를
 		// 선언해두면, 컨트롤러내의 메서드내에서는
 		// 1) bag을 만들어서
@@ -35,6 +37,7 @@ public class MemberController {
 		// dao에게 insert요청!!!
 		int result = dao.login(bag);//1, 0
 		if (result ==1) {
+			session.setAttribute("id", bag.getId());
 			return "ok";
 		} else {
 			//view아래가 아니고, webapp아래

@@ -7,8 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h3>전체 검색 화면입니다.</h3>
-<a href="list">모든 회원정보 가지고오기!</a>
+<% if(session.getAttribute("id")==null) {%>
 
 <h3>로그인 화면입니다. </h3>
 <hr color="red">
@@ -30,10 +29,23 @@
 </form>
 <hr color="red">
 
-<h3>회원수정 화면입니다. </h3>
+<% } else {%>
+${id} 님이 로그인 중입니다.
+<hr color="red">
+<a href="news.jsp">
+	<button style="background: yellow">뉴스사이트로</button>
+</a><br>
+<a href="cafe.jsp">
+	<button style="background: orange">카페사이트로</button>
+</a><br>
+<a href="bbs.jsp">
+	<button style="background: pink">게시판으로</button>
+</a><br>
+<hr color="red">
+<h3>회원 전화번호 수정 화면입니다. </h3>
 <hr color="red">
 <form action="update" method="get">
-	id : <input name="id" value="apple"><br>
+	id : ${id} <input type="hidden" name="id" value="${id}"><br>
 	tel : <input name="tel" value="011"><br>
 	<button type="submit">서버로 전송</button>
 </form>
@@ -42,10 +54,18 @@
 <h3>회원탈퇴 화면입니다. </h3>
 <hr color="red">
 <form action="delete" method="get">
-	id : <input name="id" value="apple"><br>
+	id : ${id} <input type="hidden" name="id" value="${id}"><br>
 	<button type="submit">서버로 전송</button>
 </form>
 <hr color="red">
+
+<% } %>
+<br><br><br><br>
+<hr color="green">
+<h3>아래는 추가 기능으로 추후 수정 예정</h3>
+<hr color="green">
+<h3>전체 검색 화면입니다.</h3>
+<a href="list">모든 회원정보 가지고오기!</a>
 
 <h3>회원검색 화면입니다. </h3>
 <hr color="red">

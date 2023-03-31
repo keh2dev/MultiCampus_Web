@@ -7,15 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-<%
-if(session.getAttribute("count")==null){
-	out.print("아무도 방문하지 않았어...");
-} else {
-	out.print("조회수 : " + session.getAttribute("count") );
-}
+세션 카운트 1 증가!
+<% 
+	int count = (int)session.getAttribute("count");
+	count++;
+	session.setAttribute("count", count);
 %>
-
+<hr>
+현재 세션 카운트는 <%=	session.getAttribute("count") %> , ${count}
 <hr>
 </body>
 </html>
