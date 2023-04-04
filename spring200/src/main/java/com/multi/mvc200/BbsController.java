@@ -29,13 +29,21 @@ public class BbsController {
 		//dao에게 insert요청!!
 		dao.insert(bag);
 	}
-	
-	@RequestMapping("update2.multi")
+
+	@RequestMapping("update")
 	public void update(BbsVO bag, BbsDAO dao) {
 		System.out.println("update요청됨.");
 		System.out.println(bag);	
 		dao.update(bag);
 	}
+	
+
+//	@RequestMapping("update2.multi")
+//	public void update(BbsVO bag, BbsDAO dao) {
+//		System.out.println("update요청됨.");
+//		System.out.println(bag);	
+//		dao.update(bag);
+//	}
 	
 	@RequestMapping("delete2.multi")
 	public void delete(int no, BbsDAO dao) {
@@ -56,18 +64,28 @@ public class BbsController {
 		model.addAttribute("bag", bag);
 	}
 	
-	@RequestMapping("list2")
+	@RequestMapping("list5")
 	public void list(Model model) {
 		ArrayList<BbsVO> list = dao.list();
 		System.out.println(list.size()); //사이즈를 찍어보세요.
 		model.addAttribute("list", list);
 	}
-	
-	@RequestMapping("reply")
-	public void reply(ReplyVO vo, Model model) {
-		dao2.insert(vo);
-		System.out.println(vo);
-		model.addAttribute("vo", vo);
+
+	@RequestMapping("one6")
+	public void one6(int no, Model model) {
+		System.out.println("one요청됨.");
+		System.out.println(no);
+		
+		BbsVO bag = dao.one(no);
+		model.addAttribute("bag", bag);
+		//view까지 전달할 속성 추가
 	}
+// reply 개인적으로 한 것, 현재는 ReplyController로 옮김.
+//	@RequestMapping("reply")
+//	public void reply(ReplyVO vo, Model model) {
+//		dao2.insert(vo);
+//		System.out.println(vo);
+//		model.addAttribute("vo", vo);
+//	}
 	
 }

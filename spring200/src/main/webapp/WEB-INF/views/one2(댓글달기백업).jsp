@@ -10,25 +10,18 @@
 <script type="text/javascript" src="resources/js/jquery-3.6.4.js"></script>
 <script type="text/javascript">
 $(function() {
-	$('#b1').click(function() {
-		//1. 화면을 이동하지 않고, 서버에 insert해달라고 요청
-		//2. 성공하면, result아래에 append!
-		content = $('#reply').val()
-		writer = "apple"
-		// 로그인 세션 잡혀있을 경우 writer = ${id}
+	$('#b2').click(function() {
 		$.ajax({
-			url : "insert4",
+			url : 'reply',
 			data : {
-				bbsno : ${bag.no},
-				content : content,
-				writer : writer
+				writer : $('#writer').val(),
+				content : $('#content').val(),
+				bbsno : $('#bbsno').val()
 			},
-			success : function() {
-				alert('성공')
-				$('#result').append(writer + " / " + content + "<br>")
-				$('#reply').val('') 
-				//val() : 입력한 값을 가지고온다.
-				//val('~~~') : ~~값을 input의 value에 넣는다!
+			success : function(x) {
+				alert('댓글 추가')
+				alert(x)
+				$('#result').append(x+'<br>')
 			},
 			error : function() {
 				alert('실패')
@@ -101,7 +94,11 @@ ${bag.writer} / ${bag.content} <br>
 </c:forEach>
 </div>
 <hr>
-댓글달기 <input id="reply"> <button id="b1">댓글달기</button><br>
+작성자 : <input id="writer" value="banana"> <br>
+댓글 내용 : <input id="content" value="test">
+<input id="bbsno" value="${bag.no}" type="hidden">
+<input id="b2" value="댓글쓰기" type="button">
+<hr color="red">
 
 </body>
 </html>
