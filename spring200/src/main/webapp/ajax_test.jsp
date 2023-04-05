@@ -134,7 +134,7 @@
 						})
 					}) */
 					
-					return "redirect:파일명.jsp"
+				//	return "redirect:파일명.jsp"
 					
 					document.location.reload()
 					

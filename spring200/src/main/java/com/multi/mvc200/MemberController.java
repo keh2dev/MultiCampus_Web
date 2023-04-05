@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller // 스프링에서 제어하는 역할로 등록!
 public class MemberController {
@@ -86,7 +87,8 @@ public class MemberController {
 		//view까지 전달할 속성 추가
 	}
 
-	@RequestMapping(value = {"list3", "list7"})
+	@RequestMapping("list7")
+	// @RequestMapping(value = {"list3", "list7"})
 	// 리퀘스트 메소드 다중 이용!
 	public void list(Model model) {
 		//Model은 컨트롤러의 list를 views/list.jsp까지만 전달할 수 있는 객체
@@ -94,6 +96,7 @@ public class MemberController {
 		model.addAttribute("list", list);
 		// views/list3 or list7.jsp에 "list"로 list 전달.
 	}
+	
 	
 //	@RequestMapping("list7")
 //	public void list7(Model model) {
