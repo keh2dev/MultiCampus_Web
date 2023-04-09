@@ -11,7 +11,7 @@
 		어노테이션으로 싱글톤 생성하는 것이 불가능할 때 보통 사용함.
 		1) mybatis
 		2) dbcp: mybatis에 dbcp를 껴야함.
-		3) mybtis config: mybatis설정 담
+		3) mybtis config: mybatis설정 담당~
 	 -->
 	 
 	 <!-- 1) mybatis 

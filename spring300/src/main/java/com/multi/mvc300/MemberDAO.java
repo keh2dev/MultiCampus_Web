@@ -33,6 +33,7 @@ public class MemberDAO { // CRUD
 
 
 	public int insert(MemberVO bag) {
+		System.out.println("------"+my);
 		int result = my.insert("member.create", bag);
 		//						namespace.id
 		return result;
