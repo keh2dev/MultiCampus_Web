@@ -1,5 +1,7 @@
 package 프로그래머스;
 
+import java.util.Arrays;
+
 import javax.annotation.PostConstruct;
 
 public class 배열의연산3 {
@@ -17,6 +19,8 @@ public class 배열의연산3 {
 
 class Solution5 {
 	public int solution(int[] numbers) {
+		Arrays.sort(numbers);
+		int length = numbers.length;
 		int answer1 = numbers[numbers.length-1] * numbers[numbers.length-2];
 		int answer2 = numbers[0] * numbers[1];
 		int answer=0;
@@ -25,7 +29,6 @@ class Solution5 {
 		} else {
 			answer=answer2;
 		}
-		
 		return answer;
 	}
 }

@@ -7,14 +7,14 @@ public class 두수의차 {
 		Scanner sc = new Scanner(System.in);
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
-		Solution sol = new Solution();
+		Solution1 sol = new Solution1();
 		//int answer = sol.solution(num1, num2); //int
 		//System.out.println(answer);
 		sc.close();
 	}
 }
 
-class Solution {
+class Solution1 {
     public int[] solution(int[] num_list) {
     	int count0 = 0;
     	int count1 = 0;
