@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+   <typeAliases>
+      <typeAlias type="com.multi.mini.faqVO" alias="faqVO"></typeAlias>
+      <typeAlias type="com.multi.mini.askVO" alias="askVO"></typeAlias>
+      <typeAlias type="com.multi.mini.answerVO" alias="answerVO"></typeAlias>
+   </typeAliases>
+   <mappers>
+      <mapper resource="mapper/faqMapper.xml" />
+      <mapper resource="mapper/askMapper.xml" />
+      <mapper resource="mapper/answerMapper.xml" />
+   </mappers>
+</configuration>
