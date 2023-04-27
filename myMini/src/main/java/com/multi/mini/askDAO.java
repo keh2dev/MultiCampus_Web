@@ -31,7 +31,7 @@ public class askDAO {
 	}
 	
 	public int update(askVO bag) {
-		int result = my.update("ask.up", bag);
+		int result = my.update("ask.update", bag);
 		//						namespace.id
 		return result;
 	}
@@ -48,11 +48,21 @@ public class askDAO {
 		System.out.println(list.size());
 		return list;
 	}
+
 	
-//	public askVO one(String title) {
-//		askVO vo = my.selectOne("ask.one", title);
-//		//						namespace.id
-//		System.out.println(vo);
-//		return vo;
-//	}
+	public askVO oneNo(int ask_no) {
+		askVO vo = my.selectOne("ask.oneNo", ask_no);
+		//						namespace.id
+		System.out.println(vo);
+		return vo;
+	}
+	
+	public askVO updateNo(int ask_no) {
+		askVO vo = my.selectOne("ask.updateNo", ask_no);
+		//						namespace.id
+		System.out.println(vo);
+		return vo;
+	}
 }
+
+

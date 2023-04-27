@@ -37,6 +37,14 @@ public class askController {
 		dao.update(bag);
 	}
 
+	@RequestMapping("askUpdateNo")
+	public void updateNo(int ask_no, Model model) {
+		System.out.println("updateNo요청됨.");
+		System.out.println(ask_no);
+		askVO vo = dao.updateNo(ask_no);
+		model.addAttribute("vo", vo);
+	}
+	
 	@RequestMapping("askDelete")
 	public void delete(int ask_no) {
 		System.out.println("delete요청됨.");
@@ -53,7 +61,14 @@ public class askController {
 		List<askVO> list = dao.one(title);
 		model.addAttribute("list", list);
 	}
-
+	
+	@RequestMapping("askOneNo")
+	public void oneNo(int ask_no, Model model) {
+		System.out.println("oneNo요청됨.");
+		System.out.println(ask_no);
+		askVO vo = dao.oneNo(ask_no);
+		model.addAttribute("vo", vo);
+	}
 //	@RequestMapping("askOne")
 //	public void one(String title, Model model) {
 //		System.out.println("one요청됨.");
@@ -62,4 +77,8 @@ public class askController {
 //		model.addAttribute("vo", vo);
 //	}
 
+	@RequestMapping("askWrite")
+	public void write() {
+		System.out.println("write요청됨.");
+	}
 }

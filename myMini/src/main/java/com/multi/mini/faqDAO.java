@@ -8,6 +8,7 @@ package com.multi.mini;
 import java.util.List;
 //import java.util.Locale;
 
+import org.apache.ibatis.reflection.SystemMetaObject;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -48,6 +49,15 @@ public class faqDAO {
 		System.out.println(list.size());
 		return list;
 	}
+
+	public List<faqVO> one2(String category) {
+		List<faqVO> list = my.selectList("faq.one2", category);
+		//						namespace.id
+		System.out.println(list.size());
+		return list;
+	}
+	
+	
 	
 //	public faqVO one(String title) {
 //		faqVO vo = my.selectOne("faq.one", title);

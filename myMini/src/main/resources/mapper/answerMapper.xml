@@ -5,7 +5,7 @@
 		프로그래머가 써주지 않아도 이미 resultType="int"가 있는 것으로 본다!
 	-->
 	<insert id="create" parameterType="answerVO">
-		insert into answer values (null, #{ask_no}, #{title}, #{content}, #{writer}, now())
+		insert into answer values (null, #{ask_no}, #{content}, #{writer}, now())
 	</insert>
 	
 	<delete id="del"  parameterType="Integer">

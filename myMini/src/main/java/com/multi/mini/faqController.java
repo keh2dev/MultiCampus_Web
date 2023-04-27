@@ -53,6 +53,16 @@ public class faqController {
 		List<faqVO> list = dao.one(title);
 		model.addAttribute("list", list);
 	}
+	
+	@RequestMapping("faqOne2")
+	public void one2(String category, Model model) {
+		System.out.println("one2요청됨.");
+		System.out.println(category);
+//		faqVO vo = dao.one(title);
+//		model.addAttribute("vo", vo);
+		List<faqVO> list = dao.one2(category);
+		model.addAttribute("list", list);
+	}
 
 //	@RequestMapping("faqOne")
 //	public void one(String title, Model model) {

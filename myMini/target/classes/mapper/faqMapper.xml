@@ -20,6 +20,10 @@
 		select * from faq where title like CONCAT('%', #{title}, '%')
 	</select>
 	
+	<select id="one2"  parameterType="String" resultType="faqVO">
+		select * from faq where category = #{category}
+	</select>
+	
 	<select id="all" resultType="faqVO">
 		select * from faq
 	</select>

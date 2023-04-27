@@ -12,16 +12,24 @@
 		delete from ask where ask_no = #{ask_no}
 	</delete>
 	
-	<update id="up"  parameterType="askVO">
+	<update id="update"  parameterType="askVO">
 		update ask set title = #{title}, content = #{content} where ask_no = #{ask_no}
 	</update>
 	
 	<select id="one"  parameterType="String" resultType="askVO">
-		select * from ask where title like CONCAT('%', #{title}, '%')
+		select * from ask where title like CONCAT('%', #{title}, '%') order by ask_no desc
+	</select>
+	
+	<select id="oneNo"  parameterType="Integer" resultType="askVO">
+		select * from ask where ask_no = #{ask_no}
+	</select>
+	
+	<select id="updateNo"  parameterType="Integer" resultType="askVO">
+		select * from ask where ask_no = #{ask_no}
 	</select>
 	
 	<select id="all" resultType="askVO">
-		select * from ask
+		select * from ask order by ask_no desc
 	</select>
 	
 </mapper>

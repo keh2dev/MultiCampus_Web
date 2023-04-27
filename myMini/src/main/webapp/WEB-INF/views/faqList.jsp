@@ -27,8 +27,6 @@ body {
 </head>
 <body>
 
-
-
 	<header
 		class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
 		<a href="main.jsp"
@@ -75,48 +73,82 @@ body {
 	</div>
 
 	<div>
-		<h3>FAQ</h3>
+		<h3>고객센터</h3>
+		<hr color="red">
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="faqList"
+				class="nav-link active">FAQ</a></li>
+			<li class="nav-item"><a href="askList"
+				class="nav-link link-secondary">1:1문의</a></li>
+		</ul>
 		<hr color="red">
 		<h4>카테고리</h4>
 		<hr color="red">
-		<form action="faqOne" method="get">
-			<ul class="nav nav-pills">
-			<!-- <li class="nav-item"><a href="#" class="nav-link active"
-				aria-current="page">Home</a></li> -->
-			<li class="nav-item"><a href="faqOne=회원" class="nav-link link-secondary">회원정보</a></li>
-			<li class="nav-item"><a href="faqOne=커뮤니티" class="nav-link link-secondary">커뮤니티</a></li>
-			<li class="nav-item"><a href="faqOne=쇼핑몰" class="nav-link link-secondary">쇼핑몰</a></li>
-			<li class="nav-item"><a href="faqOne=반려동물서비스" class="nav-link link-secondary">반려동물서비스</a></li>
-			<li class="nav-item"><a href="faqOne=유기견신고" class="nav-link link-secondary">유기견신고</a></li>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="faqOne2?category=회원"
+				class="nav-link link-secondary">회원정보</a></li>
+			<li class="nav-item"><a href="faqOne2?category=커뮤니티"
+				class="nav-link link-secondary">커뮤니티</a></li>
+			<li class="nav-item"><a href="faqOne2?category=쇼핑몰"
+				class="nav-link link-secondary">쇼핑몰</a></li>
+			<li class="nav-item"><a href="faqOne2?category=반려동물서비스"
+				class="nav-link link-secondary">반려동물서비스</a></li>
+			<li class="nav-item"><a href="faqOne2?category=유기견신고"
+				class="nav-link link-secondary">유기견신고</a></li>
 		</ul>
-		</form>
+	</div>
+	<hr color="red">
+	<h4>검색</h4>
+	<hr color="red">
+	<form action="faqOne" method="get">
+		제목 <input type="search" name="title" size="60"
+			placeholder="검색할 문의사항을 입력해주세요." onfocus="this.placeholder=''"
+			onblur="this.placeholder='검색할 문의사항을 입력해주세요.'">
+		<button type="submit">검색</button>
+	</form>
+	<div id="faqResult">
 		<hr color="red">
-		<h4>검색</h4>
-		<hr color="red">
-		<form action="faqOne" method="get">
-			제목 <input type="search" name="title" size="60"
-				placeholder="검색할 문의사항을 입력해주세요." onfocus="this.placeholder=''"
-				onblur="this.placeholder='검색할 문의사항을 입력해주세요.'">
-			<button type="submit">검색</button>
-		</form>
-		<div>
-			<hr color="red">
-			<h4>리스트</h4>
-			<hr>
-			<table border="1">
+		<h4>리스트</h4>
+		<hr>
+		<table class="table">
+			<thead class="table-primary">
 				<tr>
-					<td>no</td>
-					<td>title</td>
+					<th style="width: 10px">no</th>
+					<th style="width: 120px">category</th>
+					<th>title</th>
 				</tr>
+			</thead>
+			<tbody>
 				<c:forEach items="${list}" var="vo">
 					<tr>
 						<td>${vo.faq_no}</td>
-						<td>${vo.title}</td>
+						<td>${vo.category}</td>
+						<td><a href="#" onclick="return false;" class="hideView">${vo.title}</a></td>
+					</tr>
+					<tr class="hiddenRow" style="display: none;">
+						<td class="table-active" colspan="3">${vo.content}</td>
 					</tr>
 				</c:forEach>
-			</table>
-		</div>
+			</tbody>
+		</table>
 	</div>
+
+	<script type="text/javascript"
+		src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".hideView").click(function() {
+				parent = $(this).closest('tr');
+				hiddenRow = parent.next('.hiddenRow');
+				status = hiddenRow.css('display');
+				if (status === 'none') {
+					hiddenRow.css('display', '');
+				} else {
+					hiddenRow.css('display', 'none');
+				}
+			});
+		});
+	</script>
 
 </body>
 </html>
