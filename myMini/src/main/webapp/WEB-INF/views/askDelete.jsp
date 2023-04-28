@@ -86,7 +86,7 @@ body {
 	<div id="askResult">
 		<h4>1:1 문의</h4>
 		<hr>
-		${ask_no}번 게시글 삭제 완료<br>
+		게시글 삭제 완료<br>
 		<button type="button" onclick="location='askList'">1:1문의 게시판 돌아가기</button>
 	</div>
 

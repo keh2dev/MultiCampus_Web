@@ -25,7 +25,6 @@ body {
 </head>
 <body>
 
-
 	<header	class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
 		<a href="main.jsp" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
 			<svg class="bi me-2" width="40" height="32">
@@ -37,7 +36,6 @@ body {
 		<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
           <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
         </form>
-
 
 		<ul class="nav nav-pills">
 			<!-- <li class="nav-item"><a href="#" class="nav-link active"
